@@ -1,0 +1,149 @@
+body, h1, img{
+  padding: 0px;
+  margin: 0px;
+}
+img{
+  width: 100%;
+}
+html{ 
+  scroll-behavior: smooth;
+}
+body{
+  position: absolute;
+}
+p{
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+}
+
+.fixo{
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.circulo{
+  background-color: #EEF0F2;
+  position: absolute;
+  Width: 540.95px;
+  Height: 371.3px; 
+  Top: -275.15px;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px;
+}
+ 
+a{
+  margin: 0px;
+  padding: 7px 30px;
+  color: black;
+  background-color: #1C51FF;
+  border-radius: 21px;
+  position: absolute;
+}
+
+.link:hover { 
+  background-color: #5DCEFD;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+.icone{
+  width: 25px;
+  height: 25px;
+}
+
+#agua{
+  width: 27px;
+  height: 27px;
+}
+/* background: #FF5B44; */
+.primeiro{ 
+  top: -7px;
+  right: 60%;
+  transform: rotate(34deg);
+}
+.segundo{ 
+  top: 30px;
+  right: 53.7%;
+  transform: rotate(19deg);
+}
+.terceiro{ 
+  top: 43px;
+}
+.quarto{ 
+  top: 30px;
+  left: 53.7%;
+  transform: rotate(-15deg);
+}
+.quinto{ 
+  top: -7px;
+  left: 60%;
+  transform: rotate(-34deg);
+}
+
+#andar{
+  background: #FF5B44;
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute; 
+  top: 9px;
+}
+#andar p {
+  font-size: 19px;
+}
+
+#andar img{
+  width: 16px;
+  height: 16px;
+}
+
+#primeiro{
+  /* background-color: black; */
+  width: 100%;
+  height: 17%;
+  position: absolute;
+  top: 0;
+}
+#segundo{
+  /* background-color: rgba(0,0,255,0.8); */
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  top: 20%;
+}
+#terceiro{
+  /* background-color: rgba(0,255,255,0.8); */
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  top: 40%;
+}
+#quarto{
+  /* background-color: rgba(255,255,255,0.8); */
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  top: 58%;
+}
+#quinto{
+  /* background-color: rgba(255, 25, 25, 0.8); */
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  top: 81%;
+}
+
+.active{
+  background: #FF5B44;
+}
+
