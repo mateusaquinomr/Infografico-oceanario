@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Oceanário de Fortaleza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!-- <script src="index.js" defer></script> -->
-</head>
-<body>
-  <img src="img/tela.jpg" alt="" >
-  <section id="primeiro" >
-    <div class="fixo">
-      <div class="circulo"></div>
-      
-      <a onclick='document.getElementById("changeText").innerHTML = "1A"' class="link primeiro" href="#primeiro"><img class="icone" src="img/icons/caranguejo.svg" alt=""></a>
-      <a onclick='document.getElementById("changeText").innerHTML = "2A"' class="link segundo" href="#segundo"><img class="icone" src="img/icons/estrela.svg" alt=""></a>
-      <a onclick='document.getElementById("changeText").innerHTML = "3A"' class="link terceiro" href="#terceiro"><img class="icone" src="img/icons/tartaruga.svg" alt=""></a>
-      <a onclick='document.getElementById("changeText").innerHTML = "4A"' class="link quarto" href="#quarto"><img class="icone" src="img/icons/baleia.svg" alt=""></a>
-      <a onclick='document.getElementById("changeText").innerHTML = "5A"' class="link quinto" href="#quinto"><img class="icone" id="agua" src="img/icons/agua.svg" alt=""></a>
-      <div id="andar"> <p id="changeText"></p> <img src="img/icons/triangulo.svg" alt=""></div>
-     
-    </div>
-  </section>
-
-  <section id="segundo"></section>
-  <section id="terceiro"></section>
-  <section id="quarto"></section>
-  <section id="quinto"></section>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oceanário de Fortaleza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <img src="img/tela.jpg" alt="">
+    <section id="primeiro">
+      <div class="fixo">
+        <div class="circulo"></div>
+        <a onclick='document.getElementById("changeText").innerHTML = "1A"' class="link primeiro" href="#primeiro">
+          <img class="icone" src="img/icons/caranguejo.svg" alt="">
+        </a>
+        <a onclick='document.getElementById("changeText").innerHTML = "2A"' class="link segundo" href="#segundo">
+          <img class="icone" src="img/icons/estrela.svg" alt="">
+        </a>
+        <a onclick='document.getElementById("changeText").innerHTML = "3A"' class="link terceiro" href="#terceiro">
+          <img class="icone" src="img/icons/tartaruga.svg" alt="">
+        </a>
+        <a onclick='document.getElementById("changeText").innerHTML = "4A"' class="link quarto" href="#quarto">
+          <img class="icone" src="img/icons/baleia.svg" alt="">
+        </a>
+        <a onclick='document.getElementById("changeText").innerHTML = "5A"' class="link quinto" href="#quinto">
+          <img
+            class="icone"
+            id="agua"
+            src="img/icons/agua.svg"
+            alt=""
+          >
+        </a>
+        <div id="andar">
+          <p id="changeText"></p>
+          <img src="img/icons/triangulo.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="segundo"></section>
+    <section id="terceiro"></section>
+    <section id="quarto"></section>
+    <section id="quinto"></section>
+  </body>
   <script>
     const li=document.querySelectorAll(".link");
     const sec=document.querySelectorAll("section");
@@ -46,11 +60,4 @@
     activeMenu();
     window.addEventListener("scroll", activeMenu);
   </script>
-
-  <!-- <script type="text/javascript">
-    $("a.link").click(function(){
-      $("a.link").css("background-color", "");
-    $(this).css("background-color", "#FF5B44");
-});
-  </script> -->
 </html>
